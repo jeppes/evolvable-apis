@@ -1,6 +1,6 @@
 ## Evolvable APIs
 
-As our development teams continue to grow, so too does the importance of strong API boundaries. These boundaries, however, do not need to be set in stone. Over time they can grow to incorporate new functionality without impeding existing users of these APIs. This post will outline some decisions that can be made upfront which help maximize the possibility of compatible changes in the future.
+As our development teams grow, so too does the importance of strong API boundaries. These boundaries, however, do not need to be set in stone. Over time they can grow to incorporate new functionality without impeding existing users of these APIs. This post will outline some decisions that can be made upfront which help maximize the possibility of compatible changes in the future.
 
 The programming language used here is not real, it is meant to be illustrative and hopefully familiar. Unfortunately, the actual programming language you use will determine the extent to which you are able to support compatible changes - so this post also presents an alternative that might be helpful. Keep in mind that the recommendations here are not always going to be applicable: Only use them if they solve an actual problem for you.
 
