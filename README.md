@@ -1,6 +1,6 @@
 ## Evolvable APIs
 
-As our development teams grow, so too does the importance of strong API boundaries. These boundaries, however, do not need to be set in stone. Over time they can grow to incorporate new functionality without impeding existing users of these APIs. This post will outline some decisions that can be made upfront which help maximize the possibility of compatible changes in the future.
+As our development teams grow, so too does the importance of strong API boundaries. These boundaries, however, do not need to be set in stone. Over time they can grow to incorporate new functionality without impeding existing users of these APIs. This post will outline some decisions that can be made upfront which help maximize the possibility of compatible changes[1] in the future.
 
 The programming language used here is not real, it is meant to be illustrative and hopefully familiar. Unfortunately, the actual programming language you use will determine the extent to which you are able to support compatible changes - so this post also presents an alternative that might be helpful. Keep in mind that the recommendations here are not always going to be applicable: Only use them if they solve an actual problem for you.
 
@@ -59,3 +59,5 @@ This approach gives you many of the benefits of named arguments with default val
 ## Conclusion
 
 Your APIs should be clear and concise at the point of use and allow for flexibility and growth in the implementation. Named parameters with default values can give you this, and heterogenous maps can really help take your APIs to the next level. Again, please take these suggestions with a grain of salt. API design is far too nuanced to describe in a single blog post, and this approach should not be applied everywhere. Use it when it helps.
+
+[1] A "compatible" change is a change which does not break existing callers of an API. These stand in contrast to "breaking" changes, which require callers of an API to be updated when the API is updated.
