@@ -41,7 +41,9 @@ Our API is already looking good! New functionality can be added without breaking
 Button({ text: "Download", onClick: download })
 ```
 
-The difference here is subtle: instead of passing the arguments directly to the button, they are packaged up in a single object (i.e. map, dictionary, hash, or whatever your language supports). This enables the creation of generic, higher-order components which can transform any component built with this pattern. [React.js](https://reactjs.org/) is a great example of the power of this pattern. However, in nominally typed languages this pattern can result in a very non-trivial amount of boilerplate and often forces rigidity in the implementation since arguments cannot be removed without breaking existing callers. Languages (e.g. Java or Objective-C) which don't have great support for first class data literals are also a poor fit for this last step. Structurally typed langauges like Typescript, or dynamic languages like Clojure can make great use of this last suggestion.
+The difference here is subtle: instead of passing the arguments directly to the button, they are packaged up in a single object (i.e. map, dictionary, hash, or whatever your language supports). This enables the creation of generic, higher-order components which can transform any component built with this pattern. [React.js](https://reactjs.org/) is a great example of the power of this pattern. 
+
+Structurally typed langauges (like Typescript) or dynamic languages like Clojure can make great use of this last suggestion. However, nominally typed languages often require large amounts of boilerplate to adopt it and often force rigidity in the implementation since arguments cannot be removed without breaking existing callers. Languages (e.g. Java or Objective-C) which don't have great support for first class data literals are also a poor fit for this last suggestion.
 
 ## Alternative: Builder Pattern
 
