@@ -62,4 +62,6 @@ This approach gives you many of the benefits of named arguments with default val
 
 Your APIs should be clear and concise at the point of use and allow for flexibility and growth in the implementation. Named parameters with default values can give you this, and heterogenous maps can really help take your APIs to the next level. Again, please take these suggestions with a grain of salt. API design is far too nuanced to describe in a single blog post, and this approach should not be applied everywhere. Use it when it helps.
 
+-----------------------------
+
 [1] A "compatible" change is a change which does not break existing callers of an API. These stand in contrast to "breaking" changes, which require callers of an API to be updated when the API is updated.
