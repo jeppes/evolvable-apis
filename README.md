@@ -31,7 +31,7 @@ Button(
     onClick = download
 )
 ```
-It is not much more clear what the arguments mean. The `"Download"` string is actually being set for two different states, the boolean signifies that the button is enabled, the `null` signifies that nothing should happen when hovering over the button, and the button should trigger some sort of download when clicked.
+It is now more clear what the arguments mean. The `"Download"` string is actually being set for two different states, the boolean signifies that the button is enabled, the `null` signifies that nothing should happen when hovering over the button, and the button should trigger some sort of download when clicked.
 
 This is better, but it's too noisy! Why are we defining a value for `onHover` when it is not of interest to us, and surely the default state of a button should be enabled. To get around issues like this, we can design our API with sensible default values. Many languages will let us define these right in the definition of the button:
 
