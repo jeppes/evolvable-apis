@@ -9,7 +9,14 @@ Let's consider the case of creating the API for a `Button` component in a user i
 
 Poor API design typically results in buttons that look like this:
 ```kotlin
-Button("Download", "Download", Color.green, true, null, download)
+Button(
+    "Download",
+    "Download",
+    Color.green,
+    true,
+    null,
+    download
+)
 ```
 Why is the `"Download"` string duplicated? What is being set to `true`, or `null`. What is `download` signifying? There are many questions that come to mind when seeing a component like this. The biggest issue at play here is that the arguments mean very little to the reader in this context. The reader needs to refer to some external source of information to read this code.
 
